@@ -105,25 +105,25 @@ const projects = [
 
 const teamMembers = [
     {
-        name: "Dra. Maria Silva",
+        name: "sophia lima ",
         role: "Coordenadora Geral",
         description: "Especialista em recursos hídricos e educação ambiental",
         image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
     },
     {
-        name: "Dr. João Santos",
+        name: "joao vitor",
         role: "Especialista em Saneamento",
         description: "Engenheiro sanitarista com foco em educação",
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
     },
     {
-        name: "Ana Oliveira",
+        name: "victor hugo  de paula",
         role: "Educadora Ambiental",
         description: "Pedagoga especializada em educação científica",
         image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
     },
     {
-        name: "Carlos Tech",
+        name: "andrius ",
         role: "Coordenador de Tecnologia",
         description: "Desenvolvedor de soluções educacionais digitais",
         image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
