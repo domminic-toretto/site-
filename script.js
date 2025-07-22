@@ -103,6 +103,87 @@ const projects = [
     }
 ];
 
+const teamMembers = [
+    {
+        name: "Dra. Maria Silva",
+        role: "Coordenadora Geral",
+        description: "Especialista em recursos hídricos e educação ambiental",
+        image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
+    },
+    {
+        name: "Dr. João Santos",
+        role: "Especialista em Saneamento",
+        description: "Engenheiro sanitarista com foco em educação",
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
+    },
+    {
+        name: "Ana Oliveira",
+        role: "Educadora Ambiental",
+        description: "Pedagoga especializada em educação científica",
+        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
+    },
+    {
+        name: "Carlos Tech",
+        role: "Coordenador de Tecnologia",
+        description: "Desenvolvedor de soluções educacionais digitais",
+        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
+    }
+];
+
+const resources = [
+    {
+        title: "Cartilhas Educativas",
+        description: "Materiais didáticos sobre saneamento básico e conservação da água",
+        icon: "fas fa-book",
+        bgColor: "gradient-purple-dark",
+        buttonText: "Download",
+        buttonColor: "bg-white text-primary-purple hover:bg-blue-50"
+    },
+    {
+        title: "Vídeos Educativos",
+        description: "Conteúdo audiovisual para diferentes faixas etárias",
+        icon: "fas fa-video",
+        bgColor: "gradient-blue-1-2",
+        buttonText: "Assistir",
+        buttonColor: "bg-white text-blue-1 hover:bg-blue-50"
+    },
+    {
+        title: "Experimentos",
+        description: "Roteiros de experimentos práticos para sala de aula",
+        icon: "fas fa-flask",
+        bgColor: "gradient-blue-2-3",
+        buttonText: "Explorar",
+        buttonColor: "bg-white text-blue-2 hover:bg-blue-50"
+    },
+    {
+        title: "Agenda de Eventos",
+        description: "Workshops, palestras e atividades educativas",
+        icon: "fas fa-calendar-alt",
+        bgColor: "border-primary-purple",
+        textColor: "text-primary-purple",
+        buttonText: "Ver Agenda",
+        buttonColor: "bg-primary-purple text-white hover:bg-purple-dark"
+    },
+    {
+        title: "Blog & Notícias",
+        description: "Artigos e atualizações sobre o projeto",
+        icon: "fas fa-newspaper",
+        bgColor: "border-blue-1",
+        textColor: "text-blue-1",
+        buttonText: "Ler Mais",
+        buttonColor: "bg-blue-1 text-white hover:bg-blue-2"
+    },
+    {
+        title: "Contatos Úteis",
+        description: "Órgãos ambientais e canais de denúncia",
+        icon: "fas fa-phone",
+        bgColor: "border-blue-2",
+        textColor: "text-blue-2",
+        buttonText: "Ver Lista",
+        buttonColor: "bg-blue-2 text-white hover:bg-blue-3"
+    }
+];
+
 // Variáveis do jogo
 let gameState = 'start';
 let currentQuestion = 0;
@@ -280,12 +361,9 @@ function loadProjects() {
                     <span class="ml-2 text-sm text-gray-600">${project.city}</span>
                 </div>
                 <h3 class="text-lg font-bold text-gray-900 mb-2">${project.title}</h3>
-                <p class="text-gray-600 text-sm mb-4">
+                <p class="text-gray-600 text-sm">
                     ${project.description}
                 </p>
-                <button class="text-primary-purple font-semibold hover:text-purple-dark transition-colors">
-                    Ver mais <i class="fas fa-arrow-right ml-1"></i>
-                </button>
             </div>
         `;
         
@@ -293,68 +371,7 @@ function loadProjects() {
     });
 }
 
-// Função para carregar equipe
-function loadTeam() {
-    const teamGrid = document.getElementById('team-grid');
-    teamGrid.innerHTML = '';
-    
-    teamMembers.forEach((member) => {
-        const memberCard = document.createElement('div');
-        memberCard.className = 'bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-shadow';
-        
-        memberCard.innerHTML = `
-            <img 
-                src="${member.image}"
-                alt="${member.name}"
-                class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNDgiIGN5PSI0OCIgcj0iNDgiIGZpbGw9IiNGM0Y0RjYiLz4KPGNpcmNsZSBjeD0iNDgiIGN5PSIzNiIgcj0iMTIiIGZpbGw9IiM5Q0EzQUYiLz4KPHBhdGggZD0iTTQ4IDUyQzM2IDUyIDI0IDU4IDI0IDcyVjc2SDcyVjcyQzcyIDU4IDYwIDUyIDQ4IDUyWiIgZmlsbD0iIzlDQTNBRiIvPgo8L3N2Zz4K'"
-            />
-            <h3 class="text-lg font-bold text-gray-900 mb-2">${member.name}</h3>
-            <p class="text-primary-purple font-semibold mb-2">${member.role}</p>
-            <p class="text-gray-600 text-sm">${member.description}</p>
-        `;
-        
-        teamGrid.appendChild(memberCard);
-    });
-}
 
-// Função para carregar recursos
-function loadResources() {
-    const resourcesGrid = document.getElementById('resources-grid');
-    resourcesGrid.innerHTML = '';
-    
-    resources.forEach((resource) => {
-        const resourceCard = document.createElement('div');
-        let cardClass = 'rounded-xl p-6 ';
-        let textColorClass = '';
-        
-        if (resource.bgColor.includes('gradient')) {
-            cardClass += 'bg-gradient-to-br gradient-bg text-white';
-        } else if (resource.bgColor.includes('border')) {
-            cardClass += `bg-white border-2 ${resource.bgColor}`;
-            textColorClass = resource.textColor || '';
-        } else {
-            cardClass += `${resource.bgColor} text-white`;
-        }
-        
-        resourceCard.className = cardClass;
-        
-        resourceCard.innerHTML = `
-            <i class="${resource.icon} text-4xl mb-4 ${textColorClass}"></i>
-            <h3 class="text-xl font-bold mb-3 ${textColorClass ? 'text-gray-900' : ''}">
-                ${resource.title}
-            </h3>
-            <p class="mb-4 ${textColorClass ? 'text-gray-600' : 'text-blue-100'}">
-                ${resource.description}
-            </p>
-            <button class="px-4 py-2 rounded-full font-semibold transition-colors ${resource.buttonColor}">
-                ${resource.buttonText}
-            </button>
-        `;
-        
-        resourcesGrid.appendChild(resourceCard);
-    });
-}
 
 // Função para lidar com o formulário de contato
 function handleContactForm(event) {
@@ -376,8 +393,6 @@ function handleContactForm(event) {
 document.addEventListener('DOMContentLoaded', function() {
     // Carregar conteúdo
     loadProjects();
-    loadTeam();
-    loadResources();
     
     // Event listeners do menu mobile
     document.getElementById('mobile-menu-button').addEventListener('click', toggleMobileMenu);
