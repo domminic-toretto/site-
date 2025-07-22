@@ -30,10 +30,8 @@
                 <div id="desktop-menu" class="hidden md:flex space-x-8">
                     <button onclick="scrollToSection('#inicio')" class="text-gray-700 hover:text-primary-purple transition-colors">Início</button>
                     <button onclick="scrollToSection('#projeto')" class="text-gray-700 hover:text-primary-purple transition-colors">Projeto</button>
-                    <button onclick="scrollToSection('#jogo')" class="text-gray-700 hover:text-primary-purple transition-colors">Jogo</button>
+                    <button onclick="scrollToSection('#jogo')" class="text-gray-700 hover:text-primary-purple transition-colors">Minijogo</button>
                     <button onclick="scrollToSection('#galeria')" class="text-gray-700 hover:text-primary-purple transition-colors">Galeria</button>
-                    <button onclick="scrollToSection('#equipe')" class="text-gray-700 hover:text-primary-purple transition-colors">Equipe</button>
-                    <button onclick="scrollToSection('#recursos')" class="text-gray-700 hover:text-primary-purple transition-colors">Recursos</button>
                     <button onclick="scrollToSection('#contato')" class="text-gray-700 hover:text-primary-purple transition-colors">Contato</button>
                 </div>
 
@@ -48,10 +46,8 @@
             <div class="px-4 py-2 space-y-2">
                 <button onclick="scrollToSection('#inicio')" class="block w-full text-left py-2 text-gray-700 hover:text-primary-purple">Início</button>
                 <button onclick="scrollToSection('#projeto')" class="block w-full text-left py-2 text-gray-700 hover:text-primary-purple">Projeto</button>
-                <button onclick="scrollToSection('#jogo')" class="block w-full text-left py-2 text-gray-700 hover:text-primary-purple">Jogo</button>
+                <button onclick="scrollToSection('#jogo')" class="block w-full text-left py-2 text-gray-700 hover:text-primary-purple">Minijogo</button>
                 <button onclick="scrollToSection('#galeria')" class="block w-full text-left py-2 text-gray-700 hover:text-primary-purple">Galeria</button>
-                <button onclick="scrollToSection('#equipe')" class="block w-full text-left py-2 text-gray-700 hover:text-primary-purple">Equipe</button>
-                <button onclick="scrollToSection('#recursos')" class="block w-full text-left py-2 text-gray-700 hover:text-primary-purple">Recursos</button>
                 <button onclick="scrollToSection('#contato')" class="block w-full text-left py-2 text-gray-700 hover:text-primary-purple">Contato</button>
             </div>
         </div>
@@ -185,11 +181,11 @@
         </div>
     </section>
 
-    <!-- Jogo da Água -->
+    <!-- Minijogo da Água -->
     <section id="jogo" class="py-20 game-area">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Jogo: Guardiã da Água</h2>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Minijogo: Guardiã da Água</h2>
                 <p class="text-xl text-gray-600 max-w-2xl mx-auto">
                     Teste seus conhecimentos sobre conservação da água e práticas sustentáveis!
                 </p>
@@ -253,8 +249,8 @@
                                 <button id="restart-game" class="bg-primary-purple text-white px-6 py-3 rounded-full font-semibold hover:bg-purple-dark transition-colors">
                                     Jogar Novamente
                                 </button>
-                                <button onclick="scrollToSection('#recursos')" class="border-2 border-primary-purple text-primary-purple px-6 py-3 rounded-full font-semibold hover:bg-primary-purple hover:text-white transition-colors">
-                                    Ver Recursos
+                                <button onclick="scrollToSection('#galeria')" class="border-2 border-primary-purple text-primary-purple px-6 py-3 rounded-full font-semibold hover:bg-primary-purple hover:text-white transition-colors">
+                                    Ver Projetos
                                 </button>
                             </div>
                         </div>
@@ -279,6 +275,111 @@
             </div>
         </div>
     </section>
+
+
+
+    <!-- Contato -->
+    <section id="contato" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Entre em Contato</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Fale conosco para saber mais sobre o projeto ou participar das atividades
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Informações de Contato</h3>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-primary-purple rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-university text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-900">Universidade Federal de Uberlândia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-1 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-900">E-mail</p>
+                                <p class="text-gray-600">reitoria@ufu.br</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-2 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fab fa-instagram text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-900">Instagram</p>
+                                <p class="text-gray-600">@ufu_oficial</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <h4 class="text-lg font-bold text-gray-900 mb-4">Canais de Denúncia Ambiental</h4>
+                        <div class="space-y-3 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">IBAMA Nacional:</span>
+                                <span class="font-semibold">0800-61-8080</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Linha Verde (MG):</span>
+                                <span class="font-semibold">0800-283-2222</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Disque Denúncia:</span>
+                                <span class="font-semibold">181</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Envie uma Mensagem</h3>
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Nome</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-purple" placeholder="Seu nome completo" required>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">E-mail</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-purple" placeholder="seu@email.com" required>
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-semibold text-gray-700 mb-2">Assunto</label>
+                            <select id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-purple">
+                                <option value="Informações sobre o projeto">Informações sobre o projeto</option>
+                                <option value="Participação em atividades">Participação em atividades</option>
+                                <option value="Parcerias educacionais">Parcerias educacionais</option>
+                                <option value="Recursos educativos">Recursos educativos</option>
+                                <option value="Outros">Outros</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Mensagem</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-purple" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary-purple text-white py-3 rounded-lg font-semibold hover:bg-purple-dark transition-colors">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Rodapé -->
     <footer class="gradient-bg text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -310,9 +411,9 @@
                     <h4 class="text-lg font-bold mb-4">Links Rápidos</h4>
                     <ul class="space-y-2 text-blue-100">
                         <li><button onclick="scrollToSection('#projeto')" class="hover:text-white transition-colors">Sobre o Projeto</button></li>
-                        <li><button onclick="scrollToSection('#jogo')" class="hover:text-white transition-colors">Jogo Educativo</button></li>
+                        <li><button onclick="scrollToSection('#jogo')" class="hover:text-white transition-colors">Minijogo Educativo</button></li>
                         <li><button onclick="scrollToSection('#galeria')" class="hover:text-white transition-colors">Projetos das Alunas</button></li>
-                        <li><button onclick="scrollToSection('#recursos')" class="hover:text-white transition-colors">Recursos</button></li>
+                        <li><button onclick="scrollToSection('#contato')" class="hover:text-white transition-colors">Contato</button></li>
                     </ul>
                 </div>
                 
@@ -320,8 +421,8 @@
                     <h4 class="text-lg font-bold mb-4">Contato</h4>
                     <ul class="space-y-2 text-blue-100">
                         <li>UFU - Universidade Federal de Uberlândia</li>
-                        <li>@Guardias.agua</li>
-                        <li>contato@guardiasdaagua.org.br</li>
+                        <li>@ufu_oficial</li>
+                        <li>reitoria@ufu.br</li>
                     </ul>
                 </div>
             </div>
