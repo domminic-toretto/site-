@@ -64,13 +64,13 @@ const questions = [
     {
         question: "Qual é uma forma eficiente de reutilizar água em casa?",
         answers: [
-            "Usar água da máquina de lavar para regar plantas",
+            "lavar o carro com menos frequência",
             "Deixar a torneira pingando",
             "Tomar banhos mais longos",
             "Lavar o carro todos os dias"
         ],
         correct: 0,
-        explanation: "A água da máquina de lavar (do enxágue) pode ser reutilizada para regar plantas e limpar áreas externas."
+        explanation: "lavar o carro com menos frequência reduz o despercídio de água"
     },
     {
         question: "Quantos estados brasileiros são atendidos pelo projeto Guardiãs das Águas?",
