@@ -62,15 +62,15 @@ const questions = [
         explanation: "O projeto Guardiãs das Águas foi iniciado em 2020 com foco na educação ambiental e protagonismo feminino na ciência."
     },
     {
-        question: "Qual é uma forma eficiente de reutilizar água em casa?",
+        question: "Qual é o melhor horário para regar plantas e economizar água?",
         answers: [
-            "lavar o carro com menos frequência",
-            "Deixar a torneira pingando",
-            "Tomar banhos mais longos",
-            "Lavar o carro todos os dias"
+            "12h00 (meio-dia)",
+            "15h00 (meio da tarde)",
+            "6h00 ou 18h00 (manhã cedo ou final da tarde)",
+            "22h00 (noite)"
         ],
-        correct: 0,
-        explanation: "lavar o carro com menos frequência reduz o despercídio de água"
+        correct: 2,
+        explanation: "Regar plantas no início da manhã ou final da tarde evita evaporação excessiva, economizando água e melhorando a absorção pelas plantas."
     },
     {
         question: "Quantos estados brasileiros são atendidos pelo projeto Guardiãs das Águas?",
