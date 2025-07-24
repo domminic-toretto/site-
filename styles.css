@@ -385,9 +385,57 @@ nav {
     }
 }
 
+/* Gradientes adicionais para novas seções */
+.bg-gradient-to-br { background-image: linear-gradient(to bottom right, var(--tw-gradient-stops)); }
+.bg-gradient-to-r { background-image: linear-gradient(to right, var(--tw-gradient-stops)); }
+.from-primary-purple { --tw-gradient-from: var(--primary-purple); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, transparent); }
+.to-blue-1 { --tw-gradient-to: var(--blue-1); }
+.to-purple-dark { --tw-gradient-to: var(--purple-dark); }
+.from-blue-1 { --tw-gradient-from: var(--blue-1); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, transparent); }
+.to-blue-2 { --tw-gradient-to: var(--blue-2); }
+.from-blue-2 { --tw-gradient-from: var(--blue-2); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, transparent); }
+.to-blue-3 { --tw-gradient-to: var(--blue-3); }
+.from-blue-3 { --tw-gradient-from: var(--blue-3); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, transparent); }
+.to-primary-purple { --tw-gradient-to: var(--primary-purple); }
+.from-blue-50 { --tw-gradient-from: var(--blue-50); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, transparent); }
+.to-purple-50 { --tw-gradient-to: #faf5ff; }
+
+/* Classes de background adicionais */
+.bg-purple-100 { background-color: #f3e8ff; }
+.bg-green-100 { background-color: var(--green-100); }
+.bg-green-500 { background-color: var(--green-500); }
+
+/* Classes de texto adicionais */
+.text-green-500 { color: var(--green-500); }
+.text-blue-3 { color: var(--blue-3); }
+
+/* Classes de opacity */
+.opacity-90 { opacity: 0.9; }
+
+/* Classes de flex-shrink */
+.flex-shrink-0 { flex-shrink: 0; }
+
+/* Classes de grid para lg breakpoint */
+.lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+/* Bordas coloridas */
+.border-primary-purple { border-color: var(--primary-purple); }
+.border-blue-1 { border-color: var(--blue-1); }
+.border-blue-2 { border-color: var(--blue-2); }
+.border-blue-3 { border-color: var(--blue-3); }
+.border-green-500 { border-color: var(--green-500); }
+
+/* Classes de border-left */
+.border-l-4 { border-left-width: 4px; }
+
 /* Estilos para alta resolução */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .shadow-lg {
         box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.15), 0 4px 6px -2px rgb(0 0 0 / 0.1);
     }
+}
+
+/* Media query para lg breakpoint */
+@media (min-width: 1024px) {
+    .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
