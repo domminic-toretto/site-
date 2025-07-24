@@ -1,441 +1,494 @@
-/* Reset básico e variáveis CSS */
-:root {
-    /* Cores do projeto baseadas nas especificações */
-    --primary-purple: #8e6db5;
-    --blue-1: #91a4ce;
-    --blue-2: #91b0d4;
-    --blue-3: #92bedb;
-    --purple-dark: #5b289e;
-    --purple-light: #8f73b2;
-    --lilac: #dedae0;
-    
-    /* Cores do sistema */
-    --background: #ffffff;
-    --foreground: #1a1a1a;
-    --gray-50: #f9fafb;
-    --gray-100: #f3f4f6;
-    --gray-300: #d1d5db;
-    --gray-600: #4b5563;
-    --gray-700: #374151;
-    --gray-900: #111827;
-    
-    /* Cores adicionais */
-    --white: #ffffff;
-    --blue-50: #eff6ff;
-    --blue-100: #dbeafe;
-    --green-100: #dcfce7;
-    --green-500: #10b981;
-    --red-100: #fee2e2;
-    --red-500: #ef4444;
-    --yellow-500: #eab308;
-    
-    --radius: 0.5rem;
-}
-
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    color: var(--foreground);
-    background-color: var(--background);
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-/* Classes de utilidade - Cores */
-.text-primary-purple { color: var(--primary-purple); }
-.text-blue-1 { color: var(--blue-1); }
-.text-blue-2 { color: var(--blue-2); }
-.text-blue-3 { color: var(--blue-3); }
-.text-purple-dark { color: var(--purple-dark); }
-.text-white { color: var(--white); }
-.text-gray-600 { color: var(--gray-600); }
-.text-gray-700 { color: var(--gray-700); }
-.text-gray-900 { color: var(--gray-900); }
-.text-blue-50 { color: var(--blue-50); }
-.text-blue-100 { color: var(--blue-100); }
-
-.bg-primary-purple { background-color: var(--primary-purple); }
-.bg-blue-1 { background-color: var(--blue-1); }
-.bg-blue-2 { background-color: var(--blue-2); }
-.bg-blue-3 { background-color: var(--blue-3); }
-.bg-purple-dark { background-color: var(--purple-dark); }
-.bg-white { background-color: var(--white); }
-.bg-gray-50 { background-color: var(--gray-50); }
-.bg-gray-100 { background-color: var(--gray-100); }
-.bg-blue-50 { background-color: var(--blue-50); }
-.bg-blue-100 { background-color: var(--blue-100); }
-.bg-green-100 { background-color: var(--green-100); }
-.bg-red-100 { background-color: var(--red-100); }
-
-/* Bordas */
-.border { border: 1px solid var(--gray-300); }
-.border-2 { border: 2px solid; }
-.border-white { border-color: var(--white); }
-.border-primary-purple { border-color: var(--primary-purple); }
-.border-blue-1 { border-color: var(--blue-1); }
-.border-blue-2 { border-color: var(--blue-2); }
-.border-green-500 { border-color: var(--green-500); }
-.border-red-500 { border-color: var(--red-500); }
-.border-gray-200 { border-color: #e5e7eb; }
-.border-gray-300 { border-color: var(--gray-300); }
-.border-t { border-top: 1px solid; }
-
-/* Gradientes */
-.gradient-bg {
-    background: linear-gradient(135deg, var(--primary-purple) 0%, var(--blue-1) 25%, var(--blue-2) 50%, var(--blue-3) 100%);
-}
-
-.bg-gradient-purple-to-blue-1 {
-    background: linear-gradient(to bottom right, var(--primary-purple), var(--blue-1));
-}
-
-.bg-gradient-blue-1-to-blue-2 {
-    background: linear-gradient(to bottom right, var(--blue-1), var(--blue-2));
-}
-
-.bg-gradient-blue-2-to-blue-3 {
-    background: linear-gradient(to bottom right, var(--blue-2), var(--blue-3));
-}
-
-.bg-gradient-blue-3-to-purple {
-    background: linear-gradient(to bottom right, var(--blue-3), var(--primary-purple));
-}
-
-.game-area {
-    background: linear-gradient(45deg, #f0f9ff 0%, #e0f2fe 50%, #f1f5f9 100%);
-}
-
-/* Layout e espaçamento */
-.container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
-.max-w-7xl { max-width: 80rem; }
-.max-w-4xl { max-width: 56rem; }
-.max-w-3xl { max-width: 48rem; }
-.max-w-2xl { max-width: 42rem; }
-.max-w-md { max-width: 28rem; }
-
-.mx-auto { margin-left: auto; margin-right: auto; }
-.mb-2 { margin-bottom: 0.5rem; }
-.mb-3 { margin-bottom: 0.75rem; }
-.mb-4 { margin-bottom: 1rem; }
-.mb-6 { margin-bottom: 1.5rem; }
-.mb-8 { margin-bottom: 2rem; }
-.mb-12 { margin-bottom: 3rem; }
-.mb-16 { margin-bottom: 4rem; }
-.mt-4 { margin-top: 1rem; }
-.mt-6 { margin-top: 1.5rem; }
-.mt-12 { margin-top: 3rem; }
-.mr-2 { margin-right: 0.5rem; }
-.mr-4 { margin-right: 1rem; }
-.ml-1 { margin-left: 0.25rem; }
-.ml-2 { margin-left: 0.5rem; }
-
-.px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
-.px-4 { padding-left: 1rem; padding-right: 1rem; }
-.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
-.px-8 { padding-left: 2rem; padding-right: 2rem; }
-.py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
-.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
-.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
-.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
-.py-12 { padding-top: 3rem; padding-bottom: 3rem; }
-.py-20 { padding-top: 5rem; padding-bottom: 5rem; }
-.p-4 { padding: 1rem; }
-.p-6 { padding: 1.5rem; }
-.p-8 { padding: 2rem; }
-.pt-16 { padding-top: 4rem; }
-
-/* Flexbox e Grid */
-.flex { display: flex; }
-.flex-col { flex-direction: column; }
-.items-center { align-items: center; }
-.justify-center { justify-content: center; }
-.justify-between { justify-content: space-between; }
-.space-x-3 > * + * { margin-left: 0.75rem; }
-.space-x-4 > * + * { margin-left: 1rem; }
-.space-x-8 > * + * { margin-left: 2rem; }
-.space-y-2 > * + * { margin-top: 0.5rem; }
-.space-y-3 > * + * { margin-top: 0.75rem; }
-.space-y-4 > * + * { margin-top: 1rem; }
-.gap-4 { gap: 1rem; }
-.gap-6 { gap: 1.5rem; }
-.gap-8 { gap: 2rem; }
-.gap-12 { gap: 3rem; }
-
-.grid { display: grid; }
-.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-
-/* Posicionamento */
-.relative { position: relative; }
-.absolute { position: absolute; }
-.fixed { position: fixed; }
-.top-0 { top: 0; }
-.-top-4 { top: -1rem; }
-.-bottom-8 { bottom: -2rem; }
-.left-4 { left: 1rem; }
-.right-4 { right: 1rem; }
-.z-50 { z-index: 50; }
-
-/* Dimensões */
-.w-full { width: 100%; }
-.w-10 { width: 2.5rem; }
-.w-12 { width: 3rem; }
-.w-16 { width: 4rem; }
-.w-20 { width: 5rem; }
-.w-24 { width: 6rem; }
-.h-2 { height: 0.5rem; }
-.h-6 { height: 1.5rem; }
-.h-10 { height: 2.5rem; }
-.h-12 { height: 3rem; }
-.h-16 { height: 4rem; }
-.h-20 { height: 5rem; }
-.h-24 { height: 6rem; }
-.h-48 { height: 12rem; }
-.h-96 { height: 24rem; }
-.min-h-screen { min-height: 100vh; }
-
-/* Tipografia */
-.text-xs { font-size: 0.75rem; line-height: 1rem; }
-.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
-.text-lg { font-size: 1.125rem; line-height: 1.75rem; }
-.text-xl { font-size: 1.25rem; line-height: 1.75rem; }
-.text-2xl { font-size: 1.5rem; line-height: 2rem; }
-.text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
-.text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
-.text-6xl { font-size: 3.75rem; line-height: 1; }
-.font-bold { font-weight: 700; }
-.font-semibold { font-weight: 600; }
-.text-center { text-align: center; }
-.leading-tight { line-height: 1.25; }
-.leading-relaxed { line-height: 1.625; }
-
-/* Bordas e cantos */
-.rounded-lg { border-radius: 0.5rem; }
-.rounded-xl { border-radius: 0.75rem; }
-.rounded-2xl { border-radius: 1rem; }
-.rounded-3xl { border-radius: 1.5rem; }
-.rounded-full { border-radius: 9999px; }
-
-/* Sombras */
-.shadow-sm { box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); }
-.shadow-lg { box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.1); }
-.shadow-xl { box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 10px 10px -5px rgb(0 0 0 / 0.04); }
-
-/* Efeitos */
-.backdrop-blur-md { backdrop-filter: blur(12px); }
-.object-cover { object-fit: cover; }
-.overflow-hidden { overflow: hidden; }
-
-/* Estados de visibilidade */
-.hidden { display: none; }
-.block { display: block; }
-
-/* Transições */
-.transition-colors { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
-.transition-shadow { transition-property: box-shadow; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
-.transition-all { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
-.duration-500 { transition-duration: 500ms; }
-
-/* Estados hover */
-.hover\:bg-blue-50:hover { background-color: var(--blue-50); }
-.hover\:bg-white:hover { background-color: var(--white); }
-.hover\:bg-primary-purple:hover { background-color: var(--primary-purple); }
-.hover\:bg-purple-dark:hover { background-color: var(--purple-dark); }
-.hover\:bg-white\/30:hover { background-color: rgb(255 255 255 / 0.3); }
-.hover\:text-white:hover { color: var(--white); }
-.hover\:text-primary-purple:hover { color: var(--primary-purple); }
-.hover\:text-purple-dark:hover { color: var(--purple-dark); }
-.hover\:shadow-xl:hover { box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 10px 10px -5px rgb(0 0 0 / 0.04); }
-.hover\:scale-105:hover { transform: scale(1.05); }
-.hover\:border-primary-purple:hover { border-color: var(--primary-purple); }
-
-/* Focus */
-.focus\:outline-none:focus { outline: 2px solid transparent; outline-offset: 2px; }
-.focus\:ring-2:focus { box-shadow: 0 0 0 2px var(--primary-purple); }
-.focus\:ring-primary-purple:focus { --tw-ring-color: var(--primary-purple); }
-
-/* Transparência */
-.bg-white\/90 { background-color: rgb(255 255 255 / 0.9); }
-.bg-white\/20 { background-color: rgb(255 255 255 / 0.2); }
-
-/* Animações personalizadas */
-.floating-animation {
-    animation: float 3s ease-in-out infinite;
-}
-
-.pulse-button {
-    animation: pulse 2s infinite;
-}
-
-@keyframes float {
-    0%, 100% { 
-        transform: translateY(0px); 
+// Dados do projeto
+const questions = [
+    {
+        question: "Qual é a quantidade recomendada de água que uma pessoa deve beber por dia?",
+        answers: ["1 litro", "2-3 litros", "5 litros", "500ml"],
+        correct: 1,
+        explanation: "A quantidade recomendada é de 2-3 litros por dia, variando conforme idade, peso e atividade física."
+    },
+    {
+        question: "Qual dessas práticas contribui MAIS para a conservação da água?",
+        answers: [
+            "Tomar banhos longos",
+            "Deixar a torneira aberta ao escovar os dentes", 
+            "Reutilizar a água da máquina de lavar",
+            "Regar plantas no meio do dia"
+        ],
+        correct: 2,
+        explanation: "Reutilizar a água da máquina de lavar para outras atividades é uma excelente forma de conservação."
+    },
+    {
+        question: "O que é saneamento básico?",
+        answers: [
+            "Apenas o tratamento de água potável",
+            "Água, esgoto, resíduos sólidos e drenagem urbana",
+            "Só a coleta de lixo",
+            "Apenas a construção de banheiros"
+        ],
+        correct: 1,
+        explanation: "Saneamento básico inclui abastecimento de água, esgotamento sanitário, limpeza urbana/resíduos sólidos e drenagem."
+    },
+    {
+        question: "Qual é a principal causa da poluição das águas?",
+        answers: [
+            "Chuvas ácidas",
+            "Descarte inadequado de esgoto e resíduos",
+            "Evaporação da água",
+            "Peixes nos rios"
+        ],
+        correct: 1,
+        explanation: "O descarte inadequado de esgoto e resíduos é a principal causa de poluição hídrica."
+    },
+    {
+        question: "Como podemos identificar água contaminada?",
+        answers: [
+            "Apenas pela cor",
+            "Só pelo cheiro",
+            "Análises laboratoriais e características físicas",
+            "Somente bebendo"
+        ],
+        correct: 2,
+        explanation: "A identificação de água contaminada requer análises laboratoriais e observação de características como cor, odor e turbidez."
+    },
+    {
+        question: "Em que ano foi iniciado o projeto Guardiãs das Águas?",
+        answers: [
+            "2018",
+            "2020",
+            "2022",
+            "2024"
+        ],
+        correct: 1,
+        explanation: "O projeto Guardiãs das Águas foi iniciado em 2020 com foco na educação ambiental e protagonismo feminino na ciência."
+    },
+    {
+        question: "Qual é uma forma eficiente de reutilizar água em casa?",
+        answers: [
+            "Usar água da máquina de lavar para regar plantas",
+            "Deixar a torneira pingando",
+            "Tomar banhos mais longos",
+            "Lavar o carro todos os dias"
+        ],
+        correct: 0,
+        explanation: "A água da máquina de lavar (do enxágue) pode ser reutilizada para regar plantas e limpar áreas externas."
+    },
+    {
+        question: "Quantos estados brasileiros são atendidos pelo projeto Guardiãs das Águas?",
+        answers: [
+            "2 estados",
+            "3 estados", 
+            "4 estados",
+            "5 estados"
+        ],
+        correct: 2,
+        explanation: "O projeto atende 4 estados brasileiros: Ceará, Sergipe, Mato Grosso, Rio Grande do Sul e Minas Gerais."
+    },
+    {
+        question: "Qual das opções NÃO faz parte do saneamento básico?",
+        answers: [
+            "Abastecimento de água potável",
+            "Coleta e tratamento de esgoto",
+            "Energia elétrica",
+            "Manejo de resíduos sólidos"
+        ],
+        correct: 2,
+        explanation: "Energia elétrica não faz parte do saneamento básico. Os componentes são: água, esgoto, resíduos sólidos e drenagem urbana."
     }
-    50% { 
-        transform: translateY(-10px); 
+];
+
+const projects = [
+    {
+        state: "CE",
+        city: "Juazeiro do Norte",
+        title: "Monitoramento da Qualidade da Água",
+        description: "Projeto de análise da qualidade da água em reservatórios locais utilizando métodos científicos e tecnologia.",
+        image: "https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+        bgColor: "bg-primary-purple"
+    },
+    {
+        state: "SE",
+        city: "Aracaju",
+        title: "Sistema de Tratamento Sustentável",
+        description: "Desenvolvimento de sistema de tratamento de água usando materiais locais e técnicas sustentáveis.",
+        image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+        bgColor: "bg-blue-1"
+    },
+    {
+        state: "MT",
+        city: "Cuiabá",
+        title: "Captação de Água da Chuva",
+        description: "Implementação de sistema de captação e aproveitamento de água pluvial em ambiente escolar.",
+        image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+        bgColor: "bg-blue-2"
+    },
+    {
+        state: "RS",
+        city: "Rio Grande",
+        title: "Educação para Conservação",
+        description: "Programa educativo sobre conservação da água para crianças do ensino fundamental.",
+        image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+        bgColor: "bg-blue-3"
+    },
+    {
+        state: "MG",
+        city: "Uberlândia",
+        title: "Gestão de Resíduos",
+        description: "Projeto integrado de gestão de resíduos sólidos e tratamento de efluentes domésticos.",
+        image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+        bgColor: "bg-primary-purple"
+    },
+    {
+        state: "MG",
+        city: "Uberaba",
+        title: "Campanha de Conscientização",
+        description: "Desenvolvimento de campanha educativa sobre uso consciente da água na comunidade local.",
+        image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+        bgColor: "bg-purple-light"
+    }
+];
+
+const teamMembers = [
+    {
+        name: "Dra. Maria Silva",
+        role: "Coordenadora Geral",
+        description: "Especialista em recursos hídricos e educação ambiental",
+        image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
+    },
+    {
+        name: "Dr. João Santos",
+        role: "Especialista em Saneamento",
+        description: "Engenheiro sanitarista com foco em educação",
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
+    },
+    {
+        name: "Ana Oliveira",
+        role: "Educadora Ambiental",
+        description: "Pedagoga especializada em educação científica",
+        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
+    },
+    {
+        name: "Carlos Tech",
+        role: "Coordenador de Tecnologia",
+        description: "Desenvolvedor de soluções educacionais digitais",
+        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
+    }
+];
+
+const resources = [
+    {
+        title: "Cartilhas Educativas",
+        description: "Materiais didáticos sobre saneamento básico e conservação da água",
+        icon: "fas fa-book",
+        bgColor: "gradient-purple-dark",
+        buttonText: "Download",
+        buttonColor: "bg-white text-primary-purple hover:bg-blue-50"
+    },
+    {
+        title: "Vídeos Educativos",
+        description: "Conteúdo audiovisual para diferentes faixas etárias",
+        icon: "fas fa-video",
+        bgColor: "gradient-blue-1-2",
+        buttonText: "Assistir",
+        buttonColor: "bg-white text-blue-1 hover:bg-blue-50"
+    },
+    {
+        title: "Experimentos",
+        description: "Roteiros de experimentos práticos para sala de aula",
+        icon: "fas fa-flask",
+        bgColor: "gradient-blue-2-3",
+        buttonText: "Explorar",
+        buttonColor: "bg-white text-blue-2 hover:bg-blue-50"
+    },
+    {
+        title: "Agenda de Eventos",
+        description: "Workshops, palestras e atividades educativas",
+        icon: "fas fa-calendar-alt",
+        bgColor: "border-primary-purple",
+        textColor: "text-primary-purple",
+        buttonText: "Ver Agenda",
+        buttonColor: "bg-primary-purple text-white hover:bg-purple-dark"
+    },
+    {
+        title: "Blog & Notícias",
+        description: "Artigos e atualizações sobre o projeto",
+        icon: "fas fa-newspaper",
+        bgColor: "border-blue-1",
+        textColor: "text-blue-1",
+        buttonText: "Ler Mais",
+        buttonColor: "bg-blue-1 text-white hover:bg-blue-2"
+    },
+    {
+        title: "Contatos Úteis",
+        description: "Órgãos ambientais e canais de denúncia",
+        icon: "fas fa-phone",
+        bgColor: "border-blue-2",
+        textColor: "text-blue-2",
+        buttonText: "Ver Lista",
+        buttonColor: "bg-blue-2 text-white hover:bg-blue-3"
+    }
+];
+
+// Variáveis do jogo
+let gameState = 'start';
+let currentQuestion = 0;
+let score = 0;
+let selectedAnswer = null;
+let showFeedback = false;
+
+// Funções de utilidade
+function scrollToSection(sectionId) {
+    const element = document.querySelector(sectionId);
+    if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
     }
 }
 
-@keyframes pulse {
-    0%, 100% { 
-        opacity: 1; 
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuButton = document.getElementById('mobile-menu-button');
+    const icon = menuButton.querySelector('i');
+    
+    mobileMenu.classList.toggle('hidden');
+    
+    if (mobileMenu.classList.contains('hidden')) {
+        icon.className = 'fas fa-bars h-6 w-6';
+    } else {
+        icon.className = 'fas fa-times h-6 w-6';
     }
-    50% { 
-        opacity: 0.8; 
-    }
 }
 
-/* Botões */
-button {
-    cursor: pointer;
-    border: none;
-    background: none;
-    font-family: inherit;
-}
-
-button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-/* Formulários */
-input, select, textarea {
-    font-family: inherit;
-}
-
-input:focus, select:focus, textarea:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px var(--primary-purple);
-}
-
-/* Media queries para responsividade */
-@media (min-width: 640px) {
-    .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
-    .sm\:flex-row { flex-direction: row; }
-}
-
-@media (min-width: 768px) {
-    .md\:flex { display: flex; }
-    .md\:hidden { display: none; }
-    .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    .md\:col-span-2 { grid-column: span 2 / span 2; }
-    .md\:text-6xl { font-size: 3.75rem; line-height: 1; }
-}
-
-@media (min-width: 1024px) {
-    .lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
-    .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-}
-
-/* Estilos específicos para componentes */
-nav {
-    backdrop-filter: blur(12px);
-}
-
-.card {
-    background: var(--white);
-    border-radius: var(--radius);
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-    transition: box-shadow 0.3s ease;
-}
-
-.card:hover {
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
-}
-
-/* Responsividade adicional */
-@media (max-width: 767px) {
-    .mobile-hidden { display: none !important; }
+// Funções do jogo
+function startGame() {
+    gameState = 'playing';
+    currentQuestion = 0;
+    score = 0;
+    selectedAnswer = null;
+    showFeedback = false;
     
-    .text-4xl { font-size: 2rem; line-height: 2.25rem; }
-    .text-6xl { font-size: 2.5rem; line-height: 1.2; }
-    
-    .px-4 { padding-left: 1rem; padding-right: 1rem; }
-    .py-20 { padding-top: 3rem; padding-bottom: 3rem; }
-    
-    .gap-8 { gap: 1.5rem; }
-    .gap-12 { gap: 2rem; }
+    updateGameDisplay();
+    showNextQuestion();
 }
 
-/* Ajustes para acessibilidade */
-@media (prefers-reduced-motion: reduce) {
-    .floating-animation,
-    .pulse-button {
-        animation: none;
+function updateGameDisplay() {
+    document.getElementById('current-question').textContent = currentQuestion + 1;
+    document.getElementById('total-questions').textContent = questions.length;
+    document.getElementById('score').textContent = score;
+    
+    const progressPercentage = ((currentQuestion + 1) / questions.length) * 100;
+    document.getElementById('progress-bar').style.width = `${progressPercentage}%`;
+}
+
+function showNextQuestion() {
+    const startScreen = document.getElementById('start-screen');
+    const gameScreen = document.getElementById('game-screen');
+    const endScreen = document.getElementById('end-screen');
+    
+    startScreen.classList.add('hidden');
+    gameScreen.classList.remove('hidden');
+    endScreen.classList.add('hidden');
+    
+    const questionData = questions[currentQuestion];
+    document.getElementById('question-text').textContent = questionData.question;
+    
+    const answersContainer = document.getElementById('answers-container');
+    answersContainer.innerHTML = '';
+    
+    questionData.answers.forEach((answer, index) => {
+        const button = document.createElement('button');
+        button.className = 'w-full text-left p-4 border rounded-lg transition-colors border-gray-200 hover:border-primary-purple hover:bg-blue-50';
+        button.textContent = answer;
+        button.onclick = () => selectAnswer(index);
+        answersContainer.appendChild(button);
+    });
+    
+    document.getElementById('feedback').classList.add('hidden');
+}
+
+function selectAnswer(answerIndex) {
+    if (selectedAnswer !== null) return;
+    
+    selectedAnswer = answerIndex;
+    const questionData = questions[currentQuestion];
+    const isCorrect = answerIndex === questionData.correct;
+    
+    if (isCorrect) {
+        score += 20;
+        document.getElementById('score').textContent = score;
     }
     
-    html {
-        scroll-behavior: auto;
+    // Atualizar aparência dos botões
+    const buttons = document.querySelectorAll('#answers-container button');
+    buttons.forEach((button, index) => {
+        button.disabled = true;
+        if (index === answerIndex && isCorrect) {
+            button.className = 'w-full text-left p-4 border rounded-lg bg-green-100 border-green-500';
+        } else if (index === answerIndex && !isCorrect) {
+            button.className = 'w-full text-left p-4 border rounded-lg bg-red-100 border-red-500';
+        } else if (index === questionData.correct) {
+            button.className = 'w-full text-left p-4 border rounded-lg bg-green-100 border-green-500';
+        }
+    });
+    
+    // Mostrar feedback
+    const feedback = document.getElementById('feedback');
+    feedback.className = `mt-6 p-4 rounded-lg ${isCorrect ? 'bg-green-100 border border-green-200' : 'bg-red-100 border border-red-200'}`;
+    feedback.innerHTML = `
+        <p><strong>${isCorrect ? 'Correto!' : 'Incorreto.'}</strong> ${questionData.explanation}</p>
+        <button onclick="nextQuestion()" class="mt-4 bg-primary-purple text-white px-6 py-2 rounded-full font-semibold hover:bg-purple-dark transition-colors">
+            ${currentQuestion + 1 >= questions.length ? 'Ver Resultado' : 'Próxima Pergunta'}
+        </button>
+    `;
+    feedback.classList.remove('hidden');
+}
+
+function nextQuestion() {
+    if (currentQuestion + 1 >= questions.length) {
+        endGame();
+    } else {
+        currentQuestion++;
+        selectedAnswer = null;
+        updateGameDisplay();
+        showNextQuestion();
     }
 }
 
-/* Gradientes adicionais para novas seções */
-.bg-gradient-to-br { background-image: linear-gradient(to bottom right, var(--tw-gradient-stops)); }
-.bg-gradient-to-r { background-image: linear-gradient(to right, var(--tw-gradient-stops)); }
-.from-primary-purple { --tw-gradient-from: var(--primary-purple); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, transparent); }
-.to-blue-1 { --tw-gradient-to: var(--blue-1); }
-.to-purple-dark { --tw-gradient-to: var(--purple-dark); }
-.from-blue-1 { --tw-gradient-from: var(--blue-1); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, transparent); }
-.to-blue-2 { --tw-gradient-to: var(--blue-2); }
-.from-blue-2 { --tw-gradient-from: var(--blue-2); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, transparent); }
-.to-blue-3 { --tw-gradient-to: var(--blue-3); }
-.from-blue-3 { --tw-gradient-from: var(--blue-3); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, transparent); }
-.to-primary-purple { --tw-gradient-to: var(--primary-purple); }
-.from-blue-50 { --tw-gradient-from: var(--blue-50); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, transparent); }
-.to-purple-50 { --tw-gradient-to: #faf5ff; }
+function endGame() {
+    gameState = 'end';
+    
+    const startScreen = document.getElementById('start-screen');
+    const gameScreen = document.getElementById('game-screen');
+    const endScreen = document.getElementById('end-screen');
+    
+    startScreen.classList.add('hidden');
+    gameScreen.classList.add('hidden');
+    endScreen.classList.remove('hidden');
+    
+    document.getElementById('final-score').textContent = `${score}/100 pontos`;
+    document.getElementById('progress-bar').style.width = '100%';
+}
 
-/* Classes de background adicionais */
-.bg-purple-100 { background-color: #f3e8ff; }
-.bg-green-100 { background-color: var(--green-100); }
-.bg-green-500 { background-color: var(--green-500); }
+function restartGame() {
+    gameState = 'start';
+    
+    const startScreen = document.getElementById('start-screen');
+    const gameScreen = document.getElementById('game-screen');
+    const endScreen = document.getElementById('end-screen');
+    
+    startScreen.classList.remove('hidden');
+    gameScreen.classList.add('hidden');
+    endScreen.classList.add('hidden');
+    
+    document.getElementById('progress-bar').style.width = '0%';
+}
 
-/* Classes de texto adicionais */
-.text-green-500 { color: var(--green-500); }
-.text-blue-3 { color: var(--blue-3); }
+// Função para carregar projetos
+function loadProjects() {
+    const projectsGrid = document.getElementById('projects-grid');
+    projectsGrid.innerHTML = '';
+    
+    projects.forEach((project) => {
+        const projectCard = document.createElement('div');
+        projectCard.className = 'bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow';
+        
+        projectCard.innerHTML = `
+            <img 
+                src="${project.image}"
+                alt="${project.title}"
+                class="w-full h-48 object-cover"
+                onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDgwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik00MDAgMjAwTDM1MCAyNTBIMzAwVjMwMEgyNTBWMzUwSDQ1MFYzMDBINTAwVjI1MEg0NTBMMzUwIDEzMEw0MDAgMjAwWiIgZmlsbD0iIzlDQTNBRiIvPgo8L3N2Zz4K'"
+            />
+            <div class="p-6">
+                <div class="flex items-center mb-3">
+                    <span class="${project.bgColor} text-white text-xs px-2 py-1 rounded-full font-semibold">
+                        ${project.state}
+                    </span>
+                    <span class="ml-2 text-sm text-gray-600">${project.city}</span>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-2">${project.title}</h3>
+                <p class="text-gray-600 text-sm">
+                    ${project.description}
+                </p>
+            </div>
+        `;
+        
+        projectsGrid.appendChild(projectCard);
+    });
+}
 
-/* Classes de opacity */
-.opacity-90 { opacity: 0.9; }
 
-/* Classes de flex-shrink */
-.flex-shrink-0 { flex-shrink: 0; }
 
-/* Classes de grid para lg breakpoint */
-.lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+// Função para lidar com o formulário de contato
+function handleContactForm(event) {
+    event.preventDefault();
+    
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData.entries());
+    
+    // Aqui você poderia enviar os dados para um servidor
+    console.log('Dados do formulário:', data);
+    
+    alert('Obrigado pela sua mensagem! Entraremos em contato em breve.');
+    
+    // Limpar o formulário
+    event.target.reset();
+}
 
-/* Bordas coloridas */
-.border-primary-purple { border-color: var(--primary-purple); }
-.border-blue-1 { border-color: var(--blue-1); }
-.border-blue-2 { border-color: var(--blue-2); }
-.border-blue-3 { border-color: var(--blue-3); }
-.border-green-500 { border-color: var(--green-500); }
+// Event listeners
+document.addEventListener('DOMContentLoaded', function() {
+    // Carregar conteúdo
+    loadProjects();
+    
+    // Event listeners do menu mobile
+    document.getElementById('mobile-menu-button').addEventListener('click', toggleMobileMenu);
+    
+    // Event listeners do jogo
+    document.getElementById('start-game').addEventListener('click', startGame);
+    document.getElementById('restart-game').addEventListener('click', restartGame);
+    
+    // Event listener do formulário de contato
+    document.getElementById('contact-form').addEventListener('submit', handleContactForm);
+    
+    // Fechar menu mobile ao clicar nos links
+    document.querySelectorAll('#mobile-menu button').forEach(button => {
+        button.addEventListener('click', toggleMobileMenu);
+    });
+    
+    // Smooth scroll para navegação
+    document.querySelectorAll('[onclick^="scrollToSection"]').forEach(element => {
+        element.addEventListener('click', function(e) {
+            e.preventDefault();
+            const sectionId = this.getAttribute('onclick').match(/'([^']+)'/)[1];
+            scrollToSection(sectionId);
+        });
+    });
+});
 
-/* Classes de border-left */
-.border-l-4 { border-left-width: 4px; }
+// Função para navegação suave
+window.scrollToSection = scrollToSection;
 
-/* Estilos para alta resolução */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .shadow-lg {
-        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.15), 0 4px 6px -2px rgb(0 0 0 / 0.1);
+// Função para fechar menu mobile ao redimensionar a tela
+window.addEventListener('resize', function() {
+    if (window.innerWidth >= 768) {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuButton = document.getElementById('mobile-menu-button');
+        const icon = menuButton.querySelector('i');
+        
+        mobileMenu.classList.add('hidden');
+        icon.className = 'fas fa-bars h-6 w-6';
     }
-}
+});
 
-/* Media query para lg breakpoint */
-@media (min-width: 1024px) {
-    .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
+// Detectar scroll para efeito na navegação
+window.addEventListener('scroll', function() {
+    const nav = document.getElementById('navigation');
+    if (window.scrollY > 10) {
+        nav.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+    } else {
+        nav.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+    }
+});
+
+// Funções globais para serem acessadas no HTML
+window.nextQuestion = nextQuestion;
+window.restartGame = restartGame;
+window.selectAnswer = selectAnswer;
