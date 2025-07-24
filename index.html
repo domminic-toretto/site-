@@ -29,11 +29,11 @@
 
                 <div id="desktop-menu" class="hidden md:flex space-x-8">
                     <button onclick="scrollToSection('#inicio')" class="text-gray-700 hover:text-primary-purple transition-colors">Início</button>
+                    <button onclick="scrollToSection('#historia')" class="text-gray-700 hover:text-primary-purple transition-colors">História</button>
                     <button onclick="scrollToSection('#projeto')" class="text-gray-700 hover:text-primary-purple transition-colors">Projeto</button>
-                    <button onclick="scrollToSection('#jogo')" class="text-gray-700 hover:text-primary-purple transition-colors">Jogo</button>
+                    <button onclick="scrollToSection('#educacao')" class="text-gray-700 hover:text-primary-purple transition-colors">Educação</button>
+                    <button onclick="scrollToSection('#jogo')" class="text-gray-700 hover:text-primary-purple transition-colors">Minijogo</button>
                     <button onclick="scrollToSection('#galeria')" class="text-gray-700 hover:text-primary-purple transition-colors">Galeria</button>
-                    <button onclick="scrollToSection('#equipe')" class="text-gray-700 hover:text-primary-purple transition-colors">Equipe</button>
-                    <button onclick="scrollToSection('#recursos')" class="text-gray-700 hover:text-primary-purple transition-colors">Recursos</button>
                     <button onclick="scrollToSection('#contato')" class="text-gray-700 hover:text-primary-purple transition-colors">Contato</button>
                 </div>
 
@@ -47,11 +47,11 @@
         <div id="mobile-menu" class="md:hidden bg-white border-t hidden">
             <div class="px-4 py-2 space-y-2">
                 <button onclick="scrollToSection('#inicio')" class="block w-full text-left py-2 text-gray-700 hover:text-primary-purple">Início</button>
+                <button onclick="scrollToSection('#historia')" class="block w-full text-left py-2 text-gray-700 hover:text-primary-purple">História</button>
                 <button onclick="scrollToSection('#projeto')" class="block w-full text-left py-2 text-gray-700 hover:text-primary-purple">Projeto</button>
-                <button onclick="scrollToSection('#jogo')" class="block w-full text-left py-2 text-gray-700 hover:text-primary-purple">Jogo</button>
+                <button onclick="scrollToSection('#educacao')" class="block w-full text-left py-2 text-gray-700 hover:text-primary-purple">Educação</button>
+                <button onclick="scrollToSection('#jogo')" class="block w-full text-left py-2 text-gray-700 hover:text-primary-purple">Minijogo</button>
                 <button onclick="scrollToSection('#galeria')" class="block w-full text-left py-2 text-gray-700 hover:text-primary-purple">Galeria</button>
-                <button onclick="scrollToSection('#equipe')" class="block w-full text-left py-2 text-gray-700 hover:text-primary-purple">Equipe</button>
-                <button onclick="scrollToSection('#recursos')" class="block w-full text-left py-2 text-gray-700 hover:text-primary-purple">Recursos</button>
                 <button onclick="scrollToSection('#contato')" class="block w-full text-left py-2 text-gray-700 hover:text-primary-purple">Contato</button>
             </div>
         </div>
@@ -100,6 +100,96 @@
                             <div class="text-2xl font-bold text-primary-purple">6</div>
                             <div class="text-sm text-gray-600">Cidades</div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- História do Projeto -->
+    <section id="historia" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">História do Projeto Guardiãs das Águas</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Conheça a trajetória de uma iniciativa que transformou a educação ambiental no Brasil
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <div class="bg-gradient-to-br from-primary-purple to-blue-1 rounded-2xl p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-6">Origens do Projeto</h3>
+                        <p class="text-lg leading-relaxed mb-4">
+                            O projeto Guardiãs das Águas nasceu da necessidade urgente de promover a educação ambiental 
+                            focada em recursos hídricos e saneamento básico, especialmente para jovens mulheres interessadas 
+                            em ciência e tecnologia.
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                            Iniciado em 2020, o projeto visa empoderar estudantes através do conhecimento científico 
+                            aplicado à conservação da água e práticas sustentáveis.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-gray-50 rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary-purple rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-lightbulb text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">2020 - Concepção</h4>
+                                <p class="text-gray-600">Idealização do projeto focado em educação hídrica</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-1 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-rocket text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">2021 - Expansão</h4>
+                                <p class="text-gray-600">Implementação em 4 estados brasileiros</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-2 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-users text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">2022-2025 - Crescimento</h4>
+                                <p class="text-gray-600">Milhares de estudantes impactadas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Conquistas e Impactos -->
+            <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8">
+                <h3 class="text-2xl font-bold text-center text-gray-900 mb-8">Conquistas e Impactos</h3>
+                <div class="grid md:grid-cols-4 gap-6 text-center">
+                    <div>
+                        <div class="text-3xl font-bold text-primary-purple mb-2">1000+</div>
+                        <p class="text-gray-600">Estudantes Participantes</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-blue-1 mb-2">50+</div>
+                        <p class="text-gray-600">Projetos Desenvolvidos</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-blue-2 mb-2">6</div>
+                        <p class="text-gray-600">Cidades Atendidas</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-blue-3 mb-2">4</div>
+                        <p class="text-gray-600">Estados Brasileiros</p>
                     </div>
                 </div>
             </div>
@@ -185,11 +275,216 @@
         </div>
     </section>
 
-    <!-- Jogo da Água -->
+    <!-- Educação: Saneamento Básico e Consumo Consciente -->
+    <section id="educacao" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Saneamento Básico e Consumo Consciente</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Aprenda sobre a importância do saneamento básico e práticas sustentáveis para o uso da água
+                </p>
+            </div>
+            
+            <!-- Saneamento Básico -->
+            <div class="mb-20">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">O que é Saneamento Básico?</h3>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Sistema integrado de serviços essenciais para a qualidade de vida e saúde pública
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                    <div class="bg-gradient-to-br from-primary-purple to-purple-dark rounded-xl p-6 text-white text-center">
+                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-tint text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">Abastecimento de Água</h4>
+                        <p class="text-sm opacity-90">
+                            Distribuição de água potável para consumo humano e atividades domésticas
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-1 to-blue-2 rounded-xl p-6 text-white text-center">
+                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-drain text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">Esgotamento Sanitário</h4>
+                        <p class="text-sm opacity-90">
+                            Coleta, tratamento e destinação adequada de águas residuais
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-2 to-blue-3 rounded-xl p-6 text-white text-center">
+                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-trash text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">Resíduos Sólidos</h4>
+                        <p class="text-sm opacity-90">
+                            Coleta, tratamento e destinação do lixo urbano
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-3 to-primary-purple rounded-xl p-6 text-white text-center">
+                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-cloud-rain text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">Drenagem Urbana</h4>
+                        <p class="text-sm opacity-90">
+                            Manejo de águas pluviais para evitar enchentes
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Importância do Saneamento -->
+                <div class="bg-gray-50 rounded-2xl p-8">
+                    <h4 class="text-2xl font-bold text-center text-gray-900 mb-8">Por que o Saneamento é Fundamental?</h4>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-heartbeat text-white text-2xl"></i>
+                            </div>
+                            <h5 class="font-bold text-gray-900 mb-2">Saúde Pública</h5>
+                            <p class="text-gray-600">Previne doenças transmitidas pela água contaminada</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-blue-1 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-leaf text-white text-2xl"></i>
+                            </div>
+                            <h5 class="font-bold text-gray-900 mb-2">Meio Ambiente</h5>
+                            <p class="text-gray-600">Protege recursos naturais e ecossistemas aquáticos</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary-purple rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-chart-line text-white text-2xl"></i>
+                            </div>
+                            <h5 class="font-bold text-gray-900 mb-2">Desenvolvimento</h5>
+                            <p class="text-gray-600">Impulsiona o crescimento socioeconômico sustentável</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Consumo Consciente -->
+            <div>
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Consumo Consciente da Água</h3>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Práticas simples que fazem a diferença na conservação dos recursos hídricos
+                    </p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-12 mb-12">
+                    <!-- Dicas de Economia -->
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-bold text-gray-900 mb-6">💧 Dicas de Economia</h4>
+                        
+                        <div class="bg-white rounded-lg border-l-4 border-primary-purple p-6 shadow-md">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-shower text-primary-purple text-xl"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-gray-900 mb-2">No Banho</h5>
+                                    <p class="text-gray-600">Reduza o tempo do banho para 5-10 minutos e feche o chuveiro ao se ensaboar.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg border-l-4 border-blue-1 p-6 shadow-md">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-tooth text-blue-1 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-gray-900 mb-2">Escovando os Dentes</h5>
+                                    <p class="text-gray-600">Feche a torneira durante a escovação. Use um copo com água para enxaguar.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg border-l-4 border-blue-2 p-6 shadow-md">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-utensils text-blue-2 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-gray-900 mb-2">Na Cozinha</h5>
+                                    <p class="text-gray-600">Lave a louça em bacias e reutilize a água para regar plantas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Reutilização da Água -->
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-bold text-gray-900 mb-6">♻️ Reutilização da Água</h4>
+                        
+                        <div class="bg-white rounded-lg border-l-4 border-green-500 p-6 shadow-md">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-cloud-rain text-green-500 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-gray-900 mb-2">Água da Chuva</h5>
+                                    <p class="text-gray-600">Colete água da chuva para regar jardins e lavar áreas externas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg border-l-4 border-blue-3 p-6 shadow-md">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-tshirt text-blue-3 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-gray-900 mb-2">Máquina de Lavar</h5>
+                                    <p class="text-gray-600">Reutilize a água do enxágue para lavagem de pisos e calçadas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg border-l-4 border-primary-purple p-6 shadow-md">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-seedling text-primary-purple text-xl"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-gray-900 mb-2">Águas Cinzas</h5>
+                                    <p class="text-gray-600">Água de pias e chuveiros (sem sabão) pode ser reutilizada na irrigação.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Impacto das Ações -->
+                <div class="bg-gradient-to-r from-primary-purple to-blue-1 rounded-2xl p-8 text-white text-center">
+                    <h4 class="text-2xl font-bold mb-6">Seu Impacto Faz a Diferença!</h4>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <div class="text-3xl font-bold mb-2">30%</div>
+                            <p class="text-sm opacity-90">Redução no consumo com práticas simples</p>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold mb-2">150L</div>
+                            <p class="text-sm opacity-90">Economia diária por pessoa</p>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold mb-2">50,000L</div>
+                            <p class="text-sm opacity-90">Economia anual por família</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minijogo da Água -->
     <section id="jogo" class="py-20 game-area">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Jogo: Guardiã da Água</h2>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Minijogo: Guardiã da Água</h2>
                 <p class="text-xl text-gray-600 max-w-2xl mx-auto">
                     Teste seus conhecimentos sobre conservação da água e práticas sustentáveis!
                 </p>
@@ -203,7 +498,7 @@
                             <div>
                                 <h3 class="text-2xl font-bold">Quiz da Água</h3>
                                 <p class="text-blue-100">
-                                    Pergunta <span id="current-question">1</span> de <span id="total-questions">5</span>
+                                    Pergunta <span id="current-question">1</span> de <span id="total-questions">8</span>
                                 </p>
                             </div>
                             <div class="text-right">
@@ -253,8 +548,8 @@
                                 <button id="restart-game" class="bg-primary-purple text-white px-6 py-3 rounded-full font-semibold hover:bg-purple-dark transition-colors">
                                     Jogar Novamente
                                 </button>
-                                <button onclick="scrollToSection('#recursos')" class="border-2 border-primary-purple text-primary-purple px-6 py-3 rounded-full font-semibold hover:bg-primary-purple hover:text-white transition-colors">
-                                    Ver Recursos
+                                <button onclick="scrollToSection('#galeria')" class="border-2 border-primary-purple text-primary-purple px-6 py-3 rounded-full font-semibold hover:bg-primary-purple hover:text-white transition-colors">
+                                    Ver Projetos
                                 </button>
                             </div>
                         </div>
@@ -280,37 +575,7 @@
         </div>
     </section>
 
-    <!-- Seção da Equipe -->
-    <section id="equipe" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Nossa Equipe</h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Profissionais dedicados à educação ambiental e ao desenvolvimento científico
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8" id="team-grid">
-                <!-- Membros da equipe serão carregados via JavaScript -->
-            </div>
-        </div>
-    </section>
 
-    <!-- Recursos -->
-    <section id="recursos" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Recursos Educativos</h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Materiais e conteúdos para apoiar a educação ambiental em escolas e comunidades
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="resources-grid">
-                <!-- Recursos serão carregados via JavaScript -->
-            </div>
-        </div>
-    </section>
 
     <!-- Contato -->
     <section id="contato" class="py-20 bg-gray-50">
@@ -333,7 +598,6 @@
                             </div>
                             <div>
                                 <p class="font-semibold text-gray-900">Universidade Federal de Uberlândia</p>
-                                <p class="text-gray-600">SENAI Uberlândia CFP Dr. Celso Charuri</p>
                             </div>
                         </div>
                         
@@ -343,7 +607,7 @@
                             </div>
                             <div>
                                 <p class="font-semibold text-gray-900">E-mail</p>
-                                <p class="text-gray-600">contato@guardiasdaagua.org.br</p>
+                                <p class="text-gray-600">reitoria@ufu.br</p>
                             </div>
                         </div>
                         
@@ -353,7 +617,7 @@
                             </div>
                             <div>
                                 <p class="font-semibold text-gray-900">Instagram</p>
-                                <p class="text-gray-600">@Guardias.agua</p>
+                                <p class="text-gray-600">@ufu_oficial</p>
                             </div>
                         </div>
                     </div>
@@ -445,10 +709,12 @@
                 <div>
                     <h4 class="text-lg font-bold mb-4">Links Rápidos</h4>
                     <ul class="space-y-2 text-blue-100">
+                        <li><button onclick="scrollToSection('#historia')" class="hover:text-white transition-colors">História do Projeto</button></li>
                         <li><button onclick="scrollToSection('#projeto')" class="hover:text-white transition-colors">Sobre o Projeto</button></li>
-                        <li><button onclick="scrollToSection('#jogo')" class="hover:text-white transition-colors">Jogo Educativo</button></li>
+                        <li><button onclick="scrollToSection('#educacao')" class="hover:text-white transition-colors">Educação Ambiental</button></li>
+                        <li><button onclick="scrollToSection('#jogo')" class="hover:text-white transition-colors">Minijogo Educativo</button></li>
                         <li><button onclick="scrollToSection('#galeria')" class="hover:text-white transition-colors">Projetos das Alunas</button></li>
-                        <li><button onclick="scrollToSection('#recursos')" class="hover:text-white transition-colors">Recursos</button></li>
+                        <li><button onclick="scrollToSection('#contato')" class="hover:text-white transition-colors">Contato</button></li>
                     </ul>
                 </div>
                 
@@ -456,8 +722,8 @@
                     <h4 class="text-lg font-bold mb-4">Contato</h4>
                     <ul class="space-y-2 text-blue-100">
                         <li>UFU - Universidade Federal de Uberlândia</li>
-                        <li>@Guardias.agua</li>
-                        <li>contato@guardiasdaagua.org.br</li>
+                        <li>@ufu_oficial</li>
+                        <li>reitoria@ufu.br</li>
                     </ul>
                 </div>
             </div>
